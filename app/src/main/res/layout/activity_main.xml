@@ -23,7 +23,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <TextView
         android:id="@+id/textView"
@@ -90,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="80dp" />
+        app:layout_constraintGuide_begin="103dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -158,62 +158,61 @@
     <Button
         android:id="@+id/button"
         android:layout_width="50dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="24dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/maven_pro_medium"
         android:text="10%"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="49dp"
-        android:layout_height="57dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/maven_pro_medium"
         android:text="15%"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="54dp"
-        android:layout_height="57dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="53dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/maven_pro_medium"
         android:text="20%"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="54dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="52dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/maven_pro_medium"
         android:text="25%"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="48dp"
-        android:layout_height="61dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/maven_pro_medium"
         android:text="0%"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -221,20 +220,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="305dp" />
+        app:layout_constraintGuide_begin="324dp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="148dp"
         android:fontFamily="@font/maven_pro_medium"
         android:text="Subtotal"
         android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="144dp"
+        android:ems="10"
+        android:fontFamily="@font/maven_pro_medium"
+        android:hint="Number"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView7"
@@ -243,6 +259,7 @@
         android:layout_marginBottom="92dp"
         android:text="Small Order Fee"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
@@ -255,9 +272,10 @@
         android:layout_marginBottom="60dp"
         android:text="Service Fee"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -267,25 +285,11 @@
         android:layout_marginBottom="24dp"
         android:text="Delivery Fee"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="124dp"
-        android:ems="10"
-        android:fontFamily="@font/maven_pro_medium"
-        android:inputType="textPersonName"
-        android:text="Number "
-        android:textAlignment="textEnd"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.809"
-        app:layout_constraintStart_toEndOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView10"
@@ -293,9 +297,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="92dp"
         android:text="TextView"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -304,9 +309,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:text="TextView"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -315,9 +321,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="TextView"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -336,6 +343,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="492dp" />
+        app:layout_constraintGuide_begin="516dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
