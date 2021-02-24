@@ -10,6 +10,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    val lista = mutableListOf<String>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -43,8 +45,14 @@ class MainActivity : AppCompatActivity() {
 
     fun guarda(view: View){
         var totalFinal = totalText.getText().toString().toDouble()
-        Log.i("edu.itesm.ubereats", totalFinal.toString())
-
+        Log.i(" Total: ", totalFinal.toString())
+        lista.add(totalFinal.toString())
+        Log.i(" Compras: ", lista.toString())
+        orderText.setText(null)
+        serviceText.setText(null)
+        deliveryText.setText(null)
+        totalText.setText(null)
+        //editTextNumberDecimal.setText("")
     }
 
     fun porcentaje(view:View){
