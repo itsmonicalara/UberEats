@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
                 var delivery_ = subtotal_ * 0.1
                 deliveryText.setText("" + delivery_)
 
+                var total_ = subtotal_ + order_ + service_ + delivery_
+                totalText.setText("" + total_)
+
             }
         })
     }
