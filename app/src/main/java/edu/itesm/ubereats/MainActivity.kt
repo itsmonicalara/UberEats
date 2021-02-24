@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun guarda(view: View){
-        /*var subtotal_ = editTextNumberDecimal.text.toString().toDouble()
-        Log.i("edu.itesm.ubereats", subtotal_.toString())*/
+        var totalFinal = totalText.getText().toString().toDouble()
+        Log.i("edu.itesm.ubereats", totalFinal.toString())
 
     }
 
@@ -53,22 +53,17 @@ class MainActivity : AppCompatActivity() {
         if(view.getId() == button10.getId()){
             calc = preTotal + (preTotal * 0.1)
             totalText.setText("" + calc)
-            Log.i("edu.itesm.uberetas", calc.toString())
         } else if(view.getId() == button15.getId()){
             calc = preTotal + (preTotal * 0.15)
             totalText.setText("" + calc)
-            Log.i("edu.itesm.uberetas", calc.toString())
         }else if(view.getId() == button20.getId()){
             calc = preTotal + (preTotal * 0.2)
             totalText.setText("" + calc)
-            Log.i("edu.itesm.uberetas", calc.toString())
         }else if(view.getId() == button25.getId()){
             calc = preTotal + (preTotal * 0.25)
             totalText.setText("" + calc)
-            Log.i("edu.itesm.uberetas", calc.toString())
         }else if(view.getId() == button0.getId()){
             totalText.setText("" + preTotal)
-            Log.i("edu.itesm.uberetas", calc.toString())
         }
 
     }
