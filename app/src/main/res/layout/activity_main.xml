@@ -156,12 +156,13 @@
         app:srcCompat="@drawable/descarga_logo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button10"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#68BFBFBF"
         android:fontFamily="@font/maven_pro_medium"
+        android:onClick="porcentaje"
         android:text="10%"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -172,12 +173,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button15"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#68BFBFBF"
         android:fontFamily="@font/maven_pro_medium"
+        android:onClick="porcentaje"
         android:text="15%"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -187,12 +189,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button20"
         android:layout_width="53dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#68BFBFBF"
         android:fontFamily="@font/maven_pro_medium"
+        android:onClick="porcentaje"
         android:text="20%"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -201,12 +204,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button25"
         android:layout_width="52dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#68BFBFBF"
         android:fontFamily="@font/maven_pro_medium"
+        android:onClick="porcentaje"
         android:text="25%"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -216,12 +220,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button0"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#68BFBFBF"
         android:fontFamily="@font/maven_pro_medium"
+        android:onClick="porcentaje"
         android:text="0%"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -258,7 +263,7 @@
         android:layout_marginBottom="144dp"
         android:ems="10"
         android:fontFamily="@font/maven_pro_medium"
-        android:hint="Number"
+        android:hint="$"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
         android:textSize="16sp"
@@ -315,7 +320,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="92dp"
         android:fontFamily="@font/maven_pro_medium"
-        android:text="TextView"
+        android:hint="$"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -328,7 +333,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:fontFamily="@font/maven_pro_medium"
-        android:text="TextView"
+        android:hint="$"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -341,7 +346,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:fontFamily="@font/maven_pro_medium"
-        android:text="TextView"
+        android:hint="$"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
