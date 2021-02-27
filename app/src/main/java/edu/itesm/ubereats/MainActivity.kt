@@ -3,6 +3,7 @@ package edu.itesm.ubereats
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
+import android.text.TextUtils
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
@@ -27,7 +28,10 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun afterTextChanged(s: Editable?) {
-                var subtotal_ = editTextNumberDecimal.text.toString().toDouble()
+                var subtotal_ = 0.0
+                if (!TextUtils.isEmpty(editTextNumberDecimal.text.toString())){
+                    subtotal_ = editTextNumberDecimal.text.toString().toDouble()
+                }
                 Log.i("edu.itesm.ubereats", subtotal_.toString())
                 var order_ = subtotal_ * 0.02
                 orderText.setText("" + order_)
