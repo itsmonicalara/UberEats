@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 if (!TextUtils.isEmpty(editTextNumberDecimal.text.toString())){
                     subtotal_ = editTextNumberDecimal.text.toString().toDouble()
                 }
-                Log.i("edu.itesm.ubereats", subtotal_.toString())
+                //Log.i("edu.itesm.ubereats", subtotal_.toString())
                 var order_ = subtotal_ * 0.02
                 orderText.setText("" + order_)
                 var service_ = subtotal_ * 0.05
