@@ -1,12 +1,15 @@
 package edu.itesm.ubereats
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
+import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun init(){
-        editTextNumberDecimal.addTextChangedListener(object: TextWatcher{
+        editTextNumberDecimal.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
             }
 
@@ -29,10 +32,9 @@ class MainActivity : AppCompatActivity() {
 
             override fun afterTextChanged(s: Editable?) {
                 var subtotal_ = 0.0
-                if (!TextUtils.isEmpty(editTextNumberDecimal.text.toString())){
+                if (!TextUtils.isEmpty(editTextNumberDecimal.text.toString())) {
                     subtotal_ = editTextNumberDecimal.text.toString().toDouble()
                 }
-                //Log.i("edu.itesm.ubereats", subtotal_.toString())
                 var order_ = subtotal_ * 0.02
                 orderText.setText("" + order_)
                 var service_ = subtotal_ * 0.05
@@ -56,10 +58,13 @@ class MainActivity : AppCompatActivity() {
         serviceText.setText(null)
         deliveryText.setText(null)
         totalText.setText(null)
-        //editTextNumberDecimal.setText("")
+        editTextNumberDecimal.setText("")
+        val intento = Intent(this, Renglones::class.java)
+        startActivity(intento)
+        finish()
     }
 
-    fun porcentaje(view:View){
+    fun porcentaje(view: View){
         var preTotal = totalText.getText().toString().toDouble()
         var calc = 0.0
         if(view.getId() == button10.getId()){
